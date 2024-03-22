@@ -1,0 +1,21 @@
+Install credential-manager
+```shell
+brew install git-credential-manager
+
+git config --global credential.helper
+
+git credential-manager configure
+git credential-manager unconfigure
+
+git clone
+
+```
+
+
+Fork repo
+```shell
+git clone --bare <repo>
+
+# CAUTION: overrides new repo
+git push --mirror <newRepo>
+```
